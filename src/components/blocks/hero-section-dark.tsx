@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { ChevronRight } from "lucide-react"
 
@@ -66,7 +67,7 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
       },
       description = "Conserto especializado, laudo técnico avançado e garantia de 12 meses. O laboratório de microeletrônica mais avançado da cidade.",
       ctaText = "Emitir Ordem de Serviço",
-      ctaHref = "#admin",
+      ctaHref = "/os",
       bottomImage = {
         light: "https://farmui.vercel.app/dashboard-light.png",
         dark: "https://cdn.21st.dev/assets/mirror/46/46904d9ee222c3e5bedbf3f2f56d7bcc97f3a9b2ecd8331ad43b3518e72ad799.png",
@@ -100,15 +101,12 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
                 <span className="relative inline-block overflow-hidden rounded-full p-[1.5px] mt-6">
                   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00E5FF_0%,#0055FF_50%,#00E5FF_100%)]" />
                   <div className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white dark:bg-[#0B0D13] text-xs font-medium backdrop-blur-3xl">
-                    <button
-                      onClick={() => {
-                        const target = document.getElementById('admin');
-                        if(target) target.scrollIntoView({ behavior: 'smooth' });
-                      }}
+                    <Link
+                      href={ctaHref || "#"}
                       className="inline-flex rounded-full text-center group items-center w-full justify-center bg-gradient-to-tr from-zinc-300/20 via-cyan-400/30 to-transparent dark:from-zinc-300/5 dark:via-cyan-400/20 text-gray-900 dark:text-white border-input border-[1px] hover:bg-gradient-to-tr hover:from-zinc-300/30 hover:via-cyan-400/40 hover:to-transparent dark:hover:from-zinc-300/10 dark:hover:via-cyan-400/30 transition-all sm:w-auto py-4 px-10 text-base font-bold"
                     >
                       {ctaText}
-                    </button>
+                    </Link>
                   </div>
                 </span>
               </div>

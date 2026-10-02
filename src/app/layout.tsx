@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SAD Tec Eletrônica",
-  description: "Autorizada Philco e LG - Assistência Técnica Especializada",
+  description:
+    "Assistência Técnica Autorizada Philco e LG — conserto de TVs e eletrodomésticos, laudo técnico e garantia em Santo Antônio do Descoberto - GO.",
 };
 
 export default function RootLayout({
