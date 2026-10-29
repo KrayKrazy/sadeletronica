@@ -4,7 +4,6 @@ const NAV = [
   { href: "/", label: "Início" },
   { href: "/#especialidades", label: "Especialidades" },
   { href: "/#localizacao", label: "Localização" },
-  { href: "/os", label: "Portal O.S." },
 ];
 
 export function SiteHeader({ active }: { active?: "home" | "os" }) {

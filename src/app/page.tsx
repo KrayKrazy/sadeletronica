@@ -8,9 +8,8 @@ const MAPS_DIR_URL =
   "https://www.google.com/maps/dir/-15.946726,-48.2842992/SAD+TEC+ELETRÔNICA,+Av.+Santa+Luzia+-+Parque+Estrela+Dalva+XI,+Santo+Antônio+do+Descoberto+-+GO,+72900-000/@-15.946726,-48.2842992,15z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x935bda54e902808b:0xd7633c4f88b71a1c!2m2!1d-48.2777458!2d-15.9515074?entry=ttu&g_ep=EgoyMDI2MDkyOS4wIKXMDSoASAFQAw%3D%3D";
 
 const BRANDS = [
-  { src: "/brands/philco.svg", name: "Philco" },
-  { src: "/brands/lg.svg", name: "LG" },
   { src: "/brands/samsung.svg", name: "Samsung" },
+  { src: "/brands/lg.svg", name: "LG" },
   { src: "/brands/electrolux.svg", name: "Electrolux" },
   { src: "/brands/mondial.png", name: "Mondial" },
 ];
@@ -19,8 +18,8 @@ const SERVICES = [
   { icon: "fa-tv", title: "Conserto de TVs", desc: "LED, OLED, Smart e Borda Infinita. Troca de painel, backlight e placa." },
   { icon: "fa-snowflake", title: "Eletrodomésticos", desc: "Geladeiras, máquinas de lavar, micro-ondas e ar-condicionado." },
   { icon: "fa-microchip", title: "Microeletrônica", desc: "Reparo de placas em nível de componente com equipamento especializado." },
-  { icon: "fa-file-lines", title: "Laudo Técnico", desc: "Diagnóstico detalhado e laudo para garantia e seguro." },
-  { icon: "fa-shield-halved", title: "Garantia de 90 dias", desc: "Garantia de peças e serviços em todos os reparos realizados." },
+  { icon: "fa-file-lines", title: "Laudo Técnico", desc: "Diagnóstico detalhado e laudo para avaliação técnica e seguro." },
+  { icon: "fa-shield-halved", title: "Peças de Procedência", desc: "Trabalhamos com componentes selecionados e rigoroso controle de qualidade." },
   { icon: "fa-hand-holding-dollar", title: "Orçamento sem custo", desc: "Avaliação e orçamento transparente antes de qualquer serviço." },
 ];
 
@@ -35,19 +34,19 @@ export default function Home() {
 
       <HeroSection
         title="SAD Tec Eletrônica"
-        subtitle={{ regular: "Assistência Técnica Autorizada ", gradient: "Philco e LG." }}
-        description="Conserto especializado de TVs e eletrodomésticos, laudo técnico e garantia. Laboratório homologado e certificado em Santo Antônio do Descoberto - GO."
-        ctaText="Emitir Ordem de Serviço"
-        ctaHref="/os"
+        subtitle={{ regular: "Assistência Técnica Especializada em ", gradient: "TVs e Eletrônica." }}
+        description="Conserto especializado de TVs, micro-ondas e eletrodomésticos com laudo técnico. Laboratório de eletrônica avançada em Santo Antônio do Descoberto - GO."
+        ctaText="Falar no WhatsApp"
+        ctaHref="https://wa.me/5561983034759?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20conserto%20na%20SAD%20Tec."
         bottomImage={{ light: "/tv_repair.jpg", dark: "/tv_repair.jpg" }}
       />
 
-      {/* Marcas homologadas */}
+      {/* Marcas atendidas */}
       <section className="py-20 border-y border-white/5 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,229,255,0.05)_0%,transparent_70%)]"></div>
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <div className="text-center mb-10">
-            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-[0.3em]">Laboratório Homologado e Certificado</h3>
+            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-[0.3em]">Especialistas nas Principais Marcas</h3>
           </div>
           <div className="bg-white rounded-2xl px-8 py-8 flex flex-wrap items-center justify-center gap-x-14 gap-y-8 shadow-xl">
             {BRANDS.map((b) => (
@@ -136,8 +135,8 @@ export default function Home() {
             </div>
             <span className="font-black text-xl text-white">SAD <span className="text-cyan-400">TEC</span></span>
           </div>
-          <p className="text-gray-500 text-sm text-center">SAD Tec Eletrônica © {new Date().getFullYear()} — Assistência Técnica Autorizada.</p>
-          <a href="/os" className="text-gray-500 hover:text-cyan-400 text-sm transition-colors">Portal O.S. (uso interno)</a>
+          <p className="text-gray-500 text-sm text-center">SAD Tec Eletrônica © {new Date().getFullYear()} — Assistência Técnica Especializada.</p>
+          <a href="/os" className="text-gray-600 hover:text-cyan-400 text-xs transition-colors opacity-40">Área Técnica (Uso Interno)</a>
         </div>
       </footer>
 

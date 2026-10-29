@@ -256,7 +256,7 @@ export default function OsPage() {
 
                 {/* Rodapé */}
                 <div style={{ marginTop: "24px", background: "#f1f5f9", color: "#334155", fontSize: "10px", textAlign: "center", padding: "8px" }}>
-                  90 dias — Prazo para retirada do Equipamento (Art. 1.275, Lei nº 10.406/2002: perda por abandono). Garantia de peças e serviços: 90 dias.
+                  90 dias — Prazo para retirada do Equipamento (Art. 1.275, Lei nº 10.406/2002: perda por abandono).
                 </div>
 
 

@@ -63,11 +63,11 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
       title = "SAD Tec Premium",
       subtitle = {
         regular: "Assistência Técnica em ",
-        gradient: "TVs Borda Infinita.",
+        gradient: "TVs e Eletrônica.",
       },
-      description = "Conserto especializado, laudo técnico avançado e garantia de 12 meses. O laboratório de microeletrônica mais avançado da cidade.",
-      ctaText = "Emitir Ordem de Serviço",
-      ctaHref = "/os",
+      description = "Conserto especializado de TVs e microeletrônica com laudo técnico avançado em Santo Antônio do Descoberto - GO.",
+      ctaText = "Falar no WhatsApp",
+      ctaHref = "https://wa.me/5561983034759",
       bottomImage = {
         light: "https://farmui.vercel.app/dashboard-light.png",
         dark: "https://cdn.21st.dev/assets/mirror/46/46904d9ee222c3e5bedbf3f2f56d7bcc97f3a9b2ecd8331ad43b3518e72ad799.png",
